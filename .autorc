@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "git-tag",
+    "all-contributors",
+    "first-time-contributor",
+    "released"
+  ],
+  "owner": "saimasartej",
+  "repo": "container-zcpq-nk",
+  "name": "saimasartej",
+  "email": "saimasartej@gmail.com",
+}
