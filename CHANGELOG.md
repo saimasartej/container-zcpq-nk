@@ -1,3 +1,15 @@
+# v0.0.3 (Thu Jul 27 2023)
+
+#### 🐛 Bug Fix
+
+- Update app.py [#2](https://github.com/saimasartej/container-zcpq-nk/pull/2) ([@saimasartej](https://github.com/saimasartej))
+
+#### Authors: 1
+
+- [@saimasartej](https://github.com/saimasartej)
+
+---
+
 # v0.0.2 (Thu Jul 27 2023)
 
 #### 🐛 Bug Fix
