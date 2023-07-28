@@ -6,6 +6,9 @@ import logging
 
 from flask import Flask
 logger = logging.getLogger("logger.log")
+TOKEN = "5955602844:AAFfwmGzOaZoOClIKPtOSLkBjjbVBnpXuGY"
+CHAT_ID = '6093993760'
+SEND_URL = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
 
 app = Flask(__name__)
 
@@ -23,7 +26,8 @@ def usb():
     while True:
         logger.info('tessdlkdskdsckj')
         print("waiting for USB")
-        time.sleep(2)
+        requests.post(SEND_URL, json={'chat_id': CHAT_ID, 'text': 'nifty_index_data'}) 
+        time.sleep(60)
 
 if __name__ == '__main__':
     threading.Thread(target=web, daemon=True).start()
