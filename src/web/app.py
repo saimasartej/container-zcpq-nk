@@ -2,6 +2,7 @@
 import time
 import threading
 import logging
+import requests
 
 
 from flask import Flask
@@ -15,7 +16,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     logger.info('gfgf')
-    return '787!'
+    return '45677!'
 
 def web():
     logger.info('gfgf')
