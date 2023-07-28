@@ -12,7 +12,7 @@ def go():
 
 @app.route('/')
 def root():
-	return 'index.hhhtmlyyyy'
+	return 'index.hhhtmlyyyyrtrtrtr'
 
 if __name__ == '__main__':
 
