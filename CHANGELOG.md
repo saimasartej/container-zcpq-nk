@@ -1,3 +1,17 @@
+# v0.0.33 (Fri Jul 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Create logger.log ([@saimasartej](https://github.com/saimasartej))
+- Delete logging.log ([@saimasartej](https://github.com/saimasartej))
+- Create logging.log ([@saimasartej](https://github.com/saimasartej))
+
+#### Authors: 1
+
+- [@saimasartej](https://github.com/saimasartej)
+
+---
+
 # v0.0.32 (Fri Jul 28 2023)
 
 #### ⚠️ Pushed to `main`
