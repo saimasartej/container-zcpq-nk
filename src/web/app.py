@@ -15,7 +15,7 @@ def configure_logging():
 def create_app():
     app = Flask(__name__)
     configure_logging()
-    register_blueprints(app)
+    
     return app
 
 
