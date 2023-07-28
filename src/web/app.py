@@ -1,5 +1,5 @@
 
-
+from threading import Thread
 from flask import *
 
 app = Flask(__name__)
@@ -17,6 +17,8 @@ def root():
 if __name__ == '__main__':
 
 	
-	  thread.start_new_thread(go, ())
+	  thread = Thread(target=go, ())
+	  thread.start()
+	  thread.start()
          #app.run(debug=True, threaded=True)
           app.run(debug=True,threaded=True)
