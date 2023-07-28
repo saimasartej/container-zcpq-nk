@@ -1,24 +1,26 @@
 
-from threading import Thread
-from flask import *
+import time
+import threading
+
+from flask import Flask
 
 app = Flask(__name__)
 
-x=2
-
-def go():
-	while True:
-		print("8")
-
 @app.route('/')
-def root():
-	return 'index.'
+def hello_world():
+    return 'Hello, World!'
+
+def web():
+    app.run(debug=True, use_reloader=False)
+
+def usb(arg1, arg2):
+    print(f"this is how to pass arguments to a thread function - {arg1} - {arg2}")
+    while True:
+        print("waiting for USB")
+        time.sleep(2)
 
 if __name__ == '__main__':
-
-	
-	  thread = Thread(target=go, ())
-	  thread.start()
-	  thread.start()
-         #app.run(debug=True, threaded=True)
-          app.run(debug=True,threaded=True)
+    threading.Thread(target=web, daemon=True).start()
+  #  threading.Thread(target=usb, daemon=True).start()
+    while True:
+        time.sleep(1)
