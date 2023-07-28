@@ -1,8 +1,11 @@
 
 import time
 import threading
+import logging
+
 
 from flask import Flask
+logger = logging.getLogger()
 
 app = Flask(__name__)
 
@@ -11,11 +14,13 @@ def hello_world():
     return 'Worldtty!'
 
 def web():
+    logger.info('gfgf')
     app.run(debug=True, use_reloader=False)
 
 def usb():
     print(f"this is how to pass arguments to a thread function")
     while True:
+        logger.info('tessdlkdskdsckj')
         print("waiting for USB")
         time.sleep(2)
 
