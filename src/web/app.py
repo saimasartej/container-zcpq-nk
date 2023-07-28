@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'World!'
 
 def web():
     app.run(debug=True, use_reloader=False)
