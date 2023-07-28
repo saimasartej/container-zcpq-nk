@@ -7,7 +7,9 @@ app = Flask(__name__)
 x=2
 
 def go():
-	return 0
+	while True:
+		print("8")
+
 @app.route('/')
 def root():
 	return 'index.html'
