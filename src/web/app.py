@@ -1,31 +1,33 @@
-
-import time
-import threading
 import logging
 
-
 from flask import Flask
-logger = logging.getLogger()
+from werkzeug.utils import find_modules, import_string
 
-app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return '66666666666666666666!'
+def configure_logging():
+    # register root logging
+    logging.basicConfig(level=logging.DEBUG)
+    logging.getLogger('werkzeug').setLevel(logging.INFO)
 
-def web():
-    logger.info('gfgf')
-    app.run(debug=True, use_reloader=False)
 
-def usb():
-    print(f"this is how to pass arguments to a thread function")
-    while True:
-        logger.info('tessdlkdskdsckj')
-        print("waiting for USB")
-        time.sleep(2)
+def register_blueprints(app):
+    """Automagically register all blueprint packages
+    Just take a look in the blueprints directory.
+    """
+    for name in find_modules('blueprints', recursive=True):
+        mod = import_string(name)
+        if hasattr(mod, 'bp'):
+            app.register_blueprint(mod.bp)
+    return None
+
+
+def create_app():
+    app = Flask(__name__)
+    configure_logging()
+    register_blueprints(app)
+    return app
+
 
 if __name__ == '__main__':
-    threading.Thread(target=web, daemon=True).start()
-    threading.Thread(target=usb, daemon=True).start()
-    while True:
-        time.sleep(1)
+    app = create_app()
+    app.run()
