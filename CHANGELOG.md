@@ -1,3 +1,15 @@
+# v0.0.35 (Fri Jul 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Update requirements.txt ([@saimasartej](https://github.com/saimasartej))
+
+#### Authors: 1
+
+- [@saimasartej](https://github.com/saimasartej)
+
+---
+
 # v0.0.34 (Fri Jul 28 2023)
 
 #### ⚠️ Pushed to `main`
