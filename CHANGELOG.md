@@ -1,3 +1,15 @@
+# v0.0.8 (Fri Jul 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Update index.html ([@saimasartej](https://github.com/saimasartej))
+
+#### Authors: 1
+
+- [@saimasartej](https://github.com/saimasartej)
+
+---
+
 # v0.0.7 (Fri Jul 28 2023)
 
 #### ⚠️ Pushed to `main`
