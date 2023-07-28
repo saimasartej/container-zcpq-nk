@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
+    logger.info('gfgf')
     return '9999!'
 
 def web():
