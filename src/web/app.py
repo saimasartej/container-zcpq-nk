@@ -17,6 +17,6 @@ def root():
 if __name__ == '__main__':
 
 	
-	 thread.start_new_thread(go, ())
-         app.run(debug=True, threaded=True)
-         #app.run()
+	 #thread.start_new_thread(go, ())
+         #app.run(debug=True, threaded=True)
+          app.run()
