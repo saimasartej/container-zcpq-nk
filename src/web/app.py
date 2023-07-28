@@ -13,14 +13,14 @@ def hello_world():
 def web():
     app.run(debug=True, use_reloader=False)
 
-def usb(arg1, arg2):
-    print(f"this is how to pass arguments to a thread function - {arg1} - {arg2}")
+def usb():
+    print(f"this is how to pass arguments to a thread function")
     while True:
         print("waiting for USB")
         time.sleep(2)
 
 if __name__ == '__main__':
     threading.Thread(target=web, daemon=True).start()
-  #  threading.Thread(target=usb, daemon=True).start()
+    threading.Thread(target=usb, daemon=True).start()
     while True:
         time.sleep(1)
